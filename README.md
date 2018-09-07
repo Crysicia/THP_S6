@@ -1,2 +1,2 @@
 # BestMotherfuckingWebsite clone for THP
-Live website : [Not available yet]()
+Live website : [Available on GitHub Pages](https://crysicia.github.io/BestMotherfuckingWebsite/)
