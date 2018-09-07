@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@keyframes rainbow {
+    0% {color: green;}
+    20% {color: blue;}
+    40% {color: orange;}
+    60% {color: gold;}
+    80% {color: violet;}
+    100% {color: gray;}
+}
+
+body {
+    margin: 40px auto;
+    max-width: 800px;
+    line-height: 1.4;
+    color: #454545;
+    text-align: justify;
+    font-size: 16px;
+    font-family: Open sans, Arial;
+}
+
+a {
+    color: #07a;
+}
+
+a:visited {
+    color: #941352;
+}
+
+small {
+    font-size: .4em;
+}
+
+.mother-blue {
+    color: #16a085;
+}
+
+.wrong {
+    color: #c0392b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.colors {
+    animation: rainbow 4s infinite;
+}
+
+.sht-blue, .sht-violet {
+    cursor: not-allowed;
+}
+
+.sht-blue {
+    color: #00e;
+}
+
+.sht-violet {
+    color: #551a8b;
+}
+
+
+li img {
+    height: 16px;
+}
+
+li code {
+    display: block;
+    margin-top: 15px;
+}
+
+.c444, .c454545 {
+    font-weight: bold;
+}
+
+.c444::before {
+    content: "";
+    display: inline-block;
+    background-color: #444;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+.c454545:before {
+    content: "";
+    display: inline-block;
+    background-color: #454545;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+.blockyblock {
+    display: block;
+    width: 800px;
+    height: 250px;
+}
+
+.left {
+    float: left;
+    width: 340px;
+}
+
+.left img {
+    width: 340px;
+}
+
+.cat {
+    font-size: 10px;
+}
+
+.right {
+    float: right;
+    width: 440px;
+    margin-top: -15px;
+}
+
+blockquote {
+    color: #456;
+    margin-left: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+blockquote:before {
+    color: gray;
+    font-family: Arial;
+    content: open-quote;
+    font-size: 44px;
+    font-weight: bold;
+    float: left;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+blockquote author {
+    display: block;
+    font-size: 8px;
+    font-style: oblique;
+}
+
+blockquote author:before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.kopimi {
+    width: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+.visited {
+    color: #941352;
+}
+
+.maroon {
+    color: #85144b;
+}
