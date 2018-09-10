@@ -3,14 +3,12 @@ floors = gets.chomp.to_i
 empty = floors - 1
 i = 1
 if (floors <= 25 && floors >= 1)
-    hash = "#"
-    space = " "
     floors.times do
         empty.times do
-            print space
+            print " "
         end
         i.times do
-            print hash
+            print "#"
         end
         print "\n"
         empty -= 1
