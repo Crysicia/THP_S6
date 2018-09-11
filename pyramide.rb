@@ -2,7 +2,7 @@ puts "hOI boi, I'm making an INVERSED pyramid, can you give me a number between 
 floors = gets.chomp.to_i
 empty = floors - 1
 i = 1
-if (floors <= 25 && floors >= 1)
+if floors <= 25 && floors >= 1
     floors.times do
         empty.times do
             print " "
