@@ -1,0 +1,32 @@
+
+
+navbar {
+   display: flex;
+   justify-content: flex-end;
+ }
+
+
+navbar a {
+        margin: 0 5px;
+}
+
+navbar button {
+      color: white;
+      background-color: #4386fb;
+      height: 30px;
+      width: 100px;
+}
+
+#container {
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+
+footer {
+width: 100vw;
+
+position: absolute;
+bottom: 0;
+}
