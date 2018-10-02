@@ -91,6 +91,7 @@ input:focus {
     font-size: 13px;
     height: 36px;
     width: 150px;
+    border: none;
 }
 
 #buttons button:hover {
