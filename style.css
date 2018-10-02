@@ -18,6 +18,10 @@ p {
     font-size: 15px;
 }
 
+button {
+    border: none;
+}
+
 navbar {
     display: flex;
     justify-content: flex-end;
@@ -63,7 +67,7 @@ navbar button {
     height: 34px;
     width: 476px;
     border: 1px solid #f2f2f2;
-    
+
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 2px 3px grey;
 
@@ -91,7 +95,6 @@ input:focus {
     font-size: 13px;
     height: 36px;
     width: 150px;
-    border: none;
 }
 
 #buttons button:hover {
