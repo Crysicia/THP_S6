@@ -41,7 +41,7 @@ def check_dice(dice)
     else
         puts "You rolled a #{dice}, nothing happen."
     end
-end
+end 
 
 def perform
     while @stairs < 10
