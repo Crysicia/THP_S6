@@ -1,6 +1,6 @@
 def ask_how_many_floors
     puts "hOI boi, I'm making a pyramid, can you give me a number between 1 and 25 ?"
-    floors = gets.chomp.to_i
+    return gets.chomp.to_i
 end
 
 def print_pyramid (floors)
