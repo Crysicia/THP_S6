@@ -13,7 +13,7 @@ crypto_hash = Hash[cryptos.zip(float)]
 
 puts "La cryptomonnaie la plus cotée est : #{crypto_hash.key(float.max)}."
 puts "La cryptomonnaie la moins cotée est : #{crypto_hash.key(float.min)}."
-puts "Il y a #{crypto_hash.keys.grep(/\/*coin*/i).length} cryptomonnaies contenant le mot 'coin'."
+puts "Il y a #{crypto_hash.keys.grep(/\/*coin/i).length} cryptomonnaies contenant le mot 'coin'."
 puts "Les cryptomonnaies suivantes sont cotées à moins de $6000 :"
 float.each do |six|
     if six <= 6000
