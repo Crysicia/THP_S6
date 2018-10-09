@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 def jean_michel_data(str, dictionary)
-  hash = Hash.new
+  hash = {}
   dictionary.each do |n|
-    str.scan(/#{n}/i).count > 0 ? hash[n] = str.scan(/#{n}/i).count : nil
+    str.scan(/#{n}/i).count.positive? ? hash[n] = str.scan(/#{n}/i).count : nil
   end
   hash
 end
