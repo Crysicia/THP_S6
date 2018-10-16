@@ -2,8 +2,8 @@ class Board
   attr_accessor :cases
   @@games_played = 0
   def initialize
-    @@games_played += 1
-    case1 = BoardCase.new([0, 0])
+    @@games_played += 1 #incrémentation du compteur de parties
+    case1 = BoardCase.new([0, 0]) #création des nouvelles cases lors de l'initialisation
     case2 = BoardCase.new([0, 1])
     case3 = BoardCase.new([0, 2])
     case4 = BoardCase.new([1, 0])
@@ -15,7 +15,7 @@ class Board
     @cases = [case1, case2, case3, case4, case5, case6, case7, case8, case9]
   end
   
-  def print_board(active_player)
+  def print_board(active_player) #affichage du tableau 
     system "clear"
     puts "+---+---+---+
 | #{cases[0].value} | #{cases[1].value} | #{cases[2].value} |
