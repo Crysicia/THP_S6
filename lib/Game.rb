@@ -48,7 +48,7 @@ class Game
     end
     @board.print_board(@@player_turn) #à la fin des boucles on affiche le tableau
     if self.victory(@@player_turn)# on vérifie si on a détecté ue victoire
-      puts "Would you like to play agoin ? (y/n)"
+      puts "Would you like to play again ? (y/n)"
       if gets.chomp == "y"
         self.new_game
       else
