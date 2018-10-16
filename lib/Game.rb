@@ -27,7 +27,7 @@ class Game
   end
   
   def self.move #fonction qui gère les déplacements des joueurs 
-    print "Choose a case to fill : "
+    print "Choose a case to fill between 1 and 9 : "
     n = gets.chomp.to_i
     if  (1..9).include?(n)     #gestion des erreurs (pas de chiffres sup à 9)
       if  @board.cases[n-1].value == " "      
