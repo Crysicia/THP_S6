@@ -1,7 +1,7 @@
 # CSV and JSON manipulation exercises !
 
 ## :wrench: Installation guide
-Here's some text, so you can do this and that, install like this :
+You can install this awesome project using some über-simple commands like :
 
     $ git clone https://github.com/Crysicia/THP-CSV-Day14.git
     $ cd THP-CSV-Day14
