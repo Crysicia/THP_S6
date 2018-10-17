@@ -10,7 +10,7 @@ Here's some text, so you can do this and that, install like this :
   Run it like this :
   
 
-    $ ruby pp.rb
+    $ ruby app.rb
     
 ## :radio: What does it do ?
 Some basic CSV and JSON manipulations using the google drive gem.
