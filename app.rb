@@ -2,6 +2,6 @@ require 'bundler'
 Bundler.require
 
 $:.unshift File.expand_path("./../lib", __FILE__)
-require 'google-spreadsheet'
+require 'csv-master/csv'
 
-Spreadsheet.perform
+CsvMaster.perform

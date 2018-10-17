@@ -14,8 +14,8 @@ class Scrapper
     page.css("a.lientxt").each do |a|
       hash[a.text] = "http://annuaire-des-mairies.com/#{a['href']}"
     end
-  return hash
-end
+    return hash
+  end
 
   def self.get_all_the_emails_of_val_doise_townhalls
     array = []
@@ -27,8 +27,7 @@ end
 		  array << h
     end 
     array
-end
-
+  end
 
   def self.perform
     File.open("db/emails.json", "w") do |file|     
