@@ -4,5 +4,10 @@
   </head>
   <body>
     <h1>Mon super site de gossip, du dossier views !</h1>
+    <% gossips.each_with_index do |gossip, i| %>
+       <p><a href="/gossips/<%= i %>/">Link</a>
+       Author : <%= gossip.author %> Content : <%= gossip.content %></p>
+      <% end %>
+      <a href="/gossips/new">New gossip</a>
   </body>
 </html>

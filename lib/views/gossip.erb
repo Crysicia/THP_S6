@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+  <h1>Gossip n°<%= gossip[1] %></h1>
+  <p>
+    Author :
+    <%= gossip[0] == "Gossip not found" ? gossip[0] : gossip[0].author %><br />
+    Content :
+    <%= gossip[0] == "Gossip not found" ? gossip[0] : gossip[0].content %><br />
+    </p>
+    <% gossip[0].comments.each do |text| %>
+    <%= text %><br>
+    <% end %>
+    <form action='/gossips/new/comment/<%= gossip[1] %>/' method='POST'>
+      Add a comment : <input type='text' name='comment'/><br/>
+      <input type='submit'/>
+    </form>
+    <a href="/">Go back to the homepage</a>
+    <a href="/gossips/edit/<%= gossip[1] %>">Edit this gossip</a>
+  </body>
+</html>
