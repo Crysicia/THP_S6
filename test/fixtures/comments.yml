@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_comment: 1
+  comment: MyString
+
+two:
+  parent_comment: 1
+  comment: MyString
