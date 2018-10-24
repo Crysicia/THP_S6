@@ -1,24 +1,13 @@
-# README
+# MOOCademy !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## :wrench: Installation guide
+You can install the hacking news like this :
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    $ git clone https://github.com/Crysicia/THP-MOOCademy.git
+    $ cd THP-MOOCademy
+    $ bundle install
+    
+## :radio: What does it do ?
+MOOCademy is just a database clone of some crappy online MOOC platform (Well, kind of...)
+## :octopus: Who made this ?
+@Crysicia the magician and @ssimonlp the debugger
