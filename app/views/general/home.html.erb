@@ -18,7 +18,7 @@
   <h3>Every gossips :</h3>
   <div class="row">
     <% @gossips.each do |gossip| %>
-    <div class="card">
+    <div class="card w-25">
       <div class="card-body">
         <h5 class="card-title">
           <%= gossip.author %>
@@ -26,7 +26,7 @@
         <p class="card-text">
           <%= gossip.content %>
         </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="/gossips/<%= gossip.id %>" class="btn btn-primary">Read more</a>
       </div>
     </div>
     <% end %>
