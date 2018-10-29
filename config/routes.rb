@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'general#home'
+  get 'home', to: 'general#home'
+  get 'home/:name', to: 'general#home'
+  get 'team', to: 'general#team'
+  get 'contact', to: 'general#contact'
+  get 'gossips/:id', to: 'gossip#show'
 end

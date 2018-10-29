@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Gossip</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/team">Team</a>
+      <a class="nav-item nav-link" href="/contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <h1>Home</h1>
+  <p>Welcome
+    <%= params[:name] %>!</p>
+  <h3>Every gossips :</h3>
+  <div class="row">
+    <% @gossips.each do |gossip| %>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <%= gossip.author %>
+        </h5>
+        <p class="card-text">
+          <%= gossip.content %>
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
