@@ -1,1 +1,1 @@
-http://thpomega-forms.herokuapp.com/
+http://thpomega-forms.herokuapp.com/users/new
