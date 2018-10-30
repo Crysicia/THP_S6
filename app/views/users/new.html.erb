@@ -2,7 +2,7 @@
 <form action="create" method="POST">
  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   Username:<br>
-  <input type="text" name="name"><br>
+  <input type="text" name="username"><br>
   Email:<br>
   <input type="email" name="email"><br>
   Bio:<br>
@@ -11,11 +11,11 @@
 </form>
 -->
 
-
+<!--
 <%= form_tag url_for(action: 'create'), method: "post" do %>
 
 <%= label_tag 'Username' %>
-<%= text_field_tag 'name', @user.username %>
+<%= text_field_tag 'username', @user.username %>
 <br /> <br />
 
 <%= label_tag 'Email' %>
@@ -28,4 +28,12 @@
 
 <%= submit_tag "Create user" %>
 
+<% end %>
+-->
+
+<%= form_for @user, url: {action: "create"} do |f| %>
+<%= f.text_field :username %>
+<%= f.text_field :email %>
+<%= f.text_area :bio, size: "60x12" %>
+<%= f.submit "Create" %>
 <% end %>

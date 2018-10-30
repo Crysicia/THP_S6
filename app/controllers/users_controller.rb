@@ -4,7 +4,11 @@ class UsersController < ApplicationController
   end
   
   def create
-    p params
-    User.create(username: params[:name], email: params[:email], bio: params[:bio])
+    if params[:user]
+      user = params[:user]
+    else
+      user = params
+    end
+    User.create(username: user[:username], email: user[:email], bio: user[:bio])
   end
 end
