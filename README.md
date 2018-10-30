@@ -20,7 +20,7 @@ This simple application allows you to create an user into your database.
 
 ## :clapper: But, what about the live website ?
 
-He's here : [Click me :star2:](hhttp://thpomega-forms.herokuapp.com/users/new)
+He's here : [Click me :star2:](http://thpomega-forms.herokuapp.com/users/new)
 
 ## :octopus: Who made this ?
 @Crysicia the adventurer and @ssimonlp the "late-to-the-office" guy!
