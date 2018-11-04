@@ -1,24 +1,26 @@
-# README
+# THP Session and cookies !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## :wrench: Installation guide
+To install and test our awesome project :
 
-Things you may want to cover:
+    $ git clone https://github.com/Crysicia/THP-Session.git
+    $ cd THP-Session
+    $ bundle install
+    $ rails db:create db:migrate
+  Run it like this :
 
-* Ruby version
+    $ rails s
+    
+  Then you can go to :
 
-* System dependencies
+    $ localhost:3000
+    
+## :radio: What does it do ?
+Our awesome-yet-simple app allows you to create an account and log in to uncover the answer to the meaning of life, the universe and everything else !
 
-* Configuration
+## :clapper: But, what about the live website ?
 
-* Database creation
+He's here : [Click me :star2:](https://thpalpha-session.herokuapp.com)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## :octopus: Who made this ?
+@Crysicia the adventurer!
