@@ -3,19 +3,24 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+  
+  def index
+    unless logged_in?
+      flash[:warning] = "You must be logged in to access to this page"
+      redirect_to login_path
+    end
+    @users = User.all
+  end
+  
   def show
     if logged_in?
      @user = User.find(params[:id])
      else
-      flash[:error] = "You must be logged in to access this page"
+      flash[:warning] = "You must be logged in to access this page"
       redirect_to login_path
     end
-
-    if session[:user_id].to_i != params[:id].to_i
-      flash[:error] = "You're not allowed to access this page"
-      redirect_to root_path
-    end
   end
+  
   def create
     @user = User.new(user_params)
     if @user.save
@@ -27,14 +32,31 @@ class UsersController < ApplicationController
       redirect_to signup_path
     end
   end
+  
   def edit
-   @user = User.find(session[:id])
+    if logged_in?
+      if session[:user_id] == params[:id].to_i
+        @user = User.find(session[:user_id])
+      else
+        flash[:warning] = "You can't edit this page"
+        redirect_to club_path
+      end
+    else
+      flash[:warning] = "You must be logged in to access this page"
+      redirect_to login_path
+    end
   end
-   def update
-    @user = User.find(session[:id])
-    @user.first_name = 
-    redirect_to user_path
-   end
+  
+  def update
+    @user = User.find(session[:user_id])
+    @user.update_attributes(user_params)
+    if @user.save(:validate => false)
+      redirect_to user_path
+    else
+      flash[:danger] = "Something went wrong, make sure to enter a valid email address."
+      redirect_to edit_user_path
+    end
+  end
 
 
   def destroy
