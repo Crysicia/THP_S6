@@ -6,9 +6,12 @@ class UserController < ApplicationController
   def create
     @user.new(user_params)
     if @user.save
+      log_in @user
       flash[:success] = "You've successfully signed up, welcome !"
+      redirect_to root_path
     else
       flash[:danger] = "Sign-up failed, please try again."
+      redirect_to signup_path
     end
   end
   
