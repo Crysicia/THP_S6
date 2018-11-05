@@ -1,0 +1,6 @@
+<%= @user.first_name %>
+<%= @user.last_name %></br>
+<%= @user.email %>
+<% if session[:user_id] == @user.id %>
+<%= link_to 'Edit profile', edit_user_path(@user), class: "btn btn-primary"%>
+<% end %>

@@ -11,3 +11,9 @@ two:
   last_name: MyString
   email: MyString
   password_digest: MyString
+
+valid:
+  first_name:   
+  last_name: Hammond
+  email: john@example.com
+
