@@ -16,4 +16,10 @@ class UserController < ApplicationController
     @user.destroy
     flash[:info] = "Account successfullt deleted, sorry to see you go."
   end
+  
+  private
+  
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+  end
 end
