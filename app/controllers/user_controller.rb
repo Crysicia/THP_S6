@@ -17,7 +17,7 @@ class UserController < ApplicationController
   
   def destroy
     @user.destroy
-    flash[:info] = "Account successfullt deleted, sorry to see you go."
+    flash[:info] = "Account successfully deleted, sorry to see you go."
   end
   
   private
