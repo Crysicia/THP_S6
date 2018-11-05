@@ -62,3 +62,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use BCrypt for authentification
 gem 'bcrypt'
+# Use bootstrap
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap_form'
+# Use jQuery
+gem 'jquery-rails'
