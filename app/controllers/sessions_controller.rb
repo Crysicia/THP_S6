@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       flash[:danger] = "Invalid username/password"
-      render 'new'
+      render '/signup'
     end
   end
   

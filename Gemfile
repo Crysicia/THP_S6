@@ -62,3 +62,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use BCrypt for authentification
 gem 'bcrypt'
+
+gem 'rails-controller-testing'
