@@ -9,16 +9,6 @@ class ActionDispatch::IntegrationTest
   include Capybara::DSL
   # Make `assert_*` methods behave like Minitest assertions
   include Capybara::Minitest::Assertions
-
-<<<<<<< HEAD
   # Add more helper methods to be used by all tests here...
 end
-=======
-  # Reset sessions and driver between tests
-  # Use super wherever this method is redefined in your individual test classes
-  def teardown
-    Capybara.reset_sessions!
-    Capybara.use_default_driver
-  end
-end
->>>>>>> master
+
