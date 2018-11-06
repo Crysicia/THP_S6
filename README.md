@@ -1,24 +1,25 @@
-# README
+# TheTDDProject !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## :wrench: Installation guide
+To install and test our awesome project :
 
-Things you may want to cover:
+    $ git clone https://github.com/Crysicia/THP-Rails-TDD-Day25
+    $ cd THP-Rails-TDD-Day25
+    $ bundle install
+    $ rails db:create db:migrate db:seed
+  Run it like this :
 
-* Ruby version
+    $ rails s
+    
+  Then you can go to :
 
-* System dependencies
+    $ localhost:3000
+  And run the tests :
+  
+    $ rails test:system
+    
+## :radio: What does it do ?
+This simple app was made to learn test driven developement with Rails and Minitest.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## :octopus: Who made this ?
+@ssimonlp the hard-worker and @Crysicia the cookies master !
