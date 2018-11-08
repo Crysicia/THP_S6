@@ -1,0 +1,10 @@
+
+<%= form_tag(search_path method: :get) do %>
+  Crypto <%= text_field_tag :name, params[:name] %>
+  <%= submit_tag 'Search', name: nil %>
+<%end%>
+<%@crypto.each do |x| %>
+  <img src="https://s2.coinmarketcap.com/static/img/coins/32x32/<%=x.id%>.png">
+  <%=x.name %>
+  <%= x.value %></br>
+<%end%>
