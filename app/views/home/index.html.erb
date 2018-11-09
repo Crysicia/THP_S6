@@ -14,11 +14,25 @@
              
               <%end%>
             </form>
-          <%@crypto.each do |x| %>
-          <img src="https://s2.coinmarketcap.com/static/img/coins/32x32/<%=x.id%>.png">
-            <%=x.name %>:
-            <%= x.value %>$</br>
-          <%end%>
+         
+          <div style="overflow-x:auto;">
+            <table>
+
+              <tr>
+                <th>Logo</th>
+                <th>Name</th>
+                <th>Value</th>
+              </tr>
+ <%@crypto.each do |x| %>
+              <tr>
+                <td><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/<%=x.id%>.png"></td>
+                <td> <%=x.name %></td>
+                <td><%= x.value %>$</td>
+              </tr>
+ <%end%>
+            </table>
+          </div>
+         
 
     </header>
 
