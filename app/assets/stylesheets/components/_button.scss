@@ -1,0 +1,20 @@
+.btn-blue {
+  background: rgb(52, 152, 219);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 121, 1)), to(rgba(52, 152, 219, 0)));
+  background-image: linear-gradient(90deg, rgb(22, 22, 101) 0%, rgba(52, 152, 219, 0) 100%);
+  color: #ecf0f1;
+  font-size: 14px;
+  padding: 7px 25px;
+  border-radius: 20px;
+  border: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-blue:hover {
+  background: rgb(219, 52, 110);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 121, 1)), to(rgba(147, 31, 71, 0)));
+  background-image: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(147, 31, 71, 0) 100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
