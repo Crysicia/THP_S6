@@ -1,8 +1,63 @@
-<button class="btn-blue">Über-button</button>
-<button class="btn-blue">LONG BUTTON OF THE DEAD YANNOW</button>
+<!--
+  Image exist
+  Navbar exist
+  Footer exist
+  Button exist 
+-->
 
-<img src="" alt="" class="avatar">
-<div class="card">
-  <img src="" alt="">
-  <p></p>
-</div>
+<body class="home">
+  <div class="navbar">
+    <div class="navbar-logo">
+      <%=image_tag("1024px-No-logo.svg.png")%>
+    </div>
+    <div class="navbar-right">
+      <ul>
+        <li><%= link_to 'Home', root_path %>
+        </li>
+        <li><%= link_to 'Components', components_path %></li>
+        <li><a href="http://www.thehackingproject.org">THP</a></li>
+        <li>
+          <img src="https://placeimg.com/200/200/people" alt="" class="avatar-small dropdown">
+          <ul class="dropdown-content">
+            <li><a href="#link1">Profile</a></li>
+            <li><a href="#link2">Resume</a></li>
+            <li><a href="#link3">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-avatar">
+      <img src="https://placeimg.com/200/200/people" alt="" class="avatar-large">
+    </div>
+    <div class="card-body">
+      <p class="card-title">Lucien</p>
+      <p class="card-category">Back-end Wizard</p>
+      <p class="card-content">@TheHackingProject student, aspiring back-end developer</p>
+    </div>
+  </div>
+  <span class="divider"></span>
+  <div class="tab">
+    <a href="#link1" data-turbolinks="false" class="btn-blue">Profile</a>
+    <a href="#link2" data-turbolinks="false" class="btn-blue">Resume</a>
+    <a href="#link3" data-turbolinks="false" class="btn-blue">Contact</a>
+    
+    <div id="link1">
+      <h3>Profile</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id="link2">
+      <h3>Resume</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+    </div>
+
+    <div id="link3">
+      <h3>Contact</h3>
+      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+    </div>
+  </div>
+</body>
