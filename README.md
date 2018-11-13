@@ -14,6 +14,10 @@ To install and test our awesome project :
 
     $ localhost:3000
     
+  You can run tests :
+
+    $ rails test:system
+    
 ## :clapper: What about the live website ?
 
 He's here : [Click me :star2:](https://thpalpha-landing.herokuapp.com)
