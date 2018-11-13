@@ -21,7 +21,7 @@ function tab(n) {
 }
 
 function reset() {
-  const arr = [1,2,3];
+  var arr = [1,2,3];
   arr.forEach(function(n){
     var tab = document.getElementById(n);
     tab.classList.remove('btn-red');
