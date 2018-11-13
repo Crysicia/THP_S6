@@ -14,3 +14,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+function tab(n) {
+  reset()
+  var tab = document.getElementById(n);
+  tab.classList.add('btn-red');
+}
+
+function reset() {
+  const arr = [1,2,3];
+  arr.forEach(function(n){
+    var tab = document.getElementById(n);
+    tab.classList.remove('btn-red');
+  });
+}
