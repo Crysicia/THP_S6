@@ -38,7 +38,7 @@ Nous avons branché Google Analytics sur nos 3 landing pages afin de pouvoir tra
 
 ## ⚡️Ouskilé le projet ?
 
-Le site en production : https://thpalpha-advanced-landing.herokuapp.com/
+Le site en production / Première LP : https://thpalpha-advanced-landing.herokuapp.com/
 
 La LP "Jeunes" :  https://thpalpha-advanced-landing.herokuapp.com/cible
 
