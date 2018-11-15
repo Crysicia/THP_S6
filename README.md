@@ -11,12 +11,9 @@ First clone this repository :
 
 $ git clone https://github.com/Crysicia/THP-Bootstrap-Day32
 Then navigate to the cloned repository and install the dependencies :
-
-$ cd THP-Grades
+cd THP-Bootstrap-Day32
 $ bundle install
-Save it, now you can simply run the script :
 
-$ ruby app.rb
 📻 What does it do ?
 
 1.Notre site fait tourner un boot Linkedin qui fait une recherche d'utilisateurs travaillant dans l'univers du digital, leur fait une demande d'ajout et leurs envoie un message personnalisé avec un lien vers leurs page dédié.
