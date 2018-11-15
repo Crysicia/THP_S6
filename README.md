@@ -18,7 +18,7 @@ Et lancez les tests :
     $ rails test:system
     
 
-# 📻 Késkéça fait  ?
+## 📻 Késkéça fait  ?
 
 1. Notre site fait tourner un bot Linkedin qui fait une recherche d'utilisateurs travaillant dans l'univers du digital et envoie une demande d'ajout avec un message personnalisé contenant un lien vers une page dédié.
 
@@ -26,7 +26,7 @@ Et lancez les tests :
 
 3. Une fois l'utilisateur connecté sur notre page il peut rentrer son adresse email dans un formulaire, ce qui va l'enregistrer dans notre mailing-list Mailchimp et qui nous permet de lui envoyer des emails personnalisés.
 
-# ⚡️Ouskilé le projet ?
+## ⚡️Ouskilé le projet ?
 
 Le site en production : https://thpalpha-advanced-landing.herokuapp.com/
 
