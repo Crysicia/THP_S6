@@ -11,7 +11,8 @@ class TwitbotService
     end
   end
   
-  def gather(search)
+  def gather
+    search = "Formation code"
     gathered_handles = []
     @client.search(search).collect do |tweet|
       if tweet.lang == "fr"
@@ -21,22 +22,24 @@ class TwitbotService
     self.update(gathered_handles)
   end
   
-  def tweet()
-    @client.update("@#{tweet.user.screen_name} Hey! Toi aussi viens apprendre à coder et à développer des sites web en seulement trois mois : https://bit.ly/2RUpbTQ")
+  def tweet
+    handles = self.retrieve
+    handles.take(10).each do |user|
+      @client.update("@#{user.nickname} Hey! Toi aussi viens apprendre à coder et à développer des sites web en seulement trois mois : https://bit.ly/2RUpbTQ")
+      user.message = 1
+    end
   end
   
   def update(handles)
     handles.each do |h|
-      unless Twitbot.find_by(handle: h)
-        pp h
-        Twitbot.create!({handle: h, send: 0})
+      unless Tweet.find_by(nickname: h)
+        Tweet.create!({nickname: h, message: 0})
       end
     end
-    self.retrieve
   end
   
   def retrieve
-    p Twitbot.all(conditions: {send: 0})
+    Tweet.where(message: 0)
   end
 end
 
