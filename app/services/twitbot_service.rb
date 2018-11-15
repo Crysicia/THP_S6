@@ -28,6 +28,7 @@ class TwitbotService
       @client.update("@#{user.nickname} Hey! Toi aussi viens apprendre à coder et à développer des sites web en seulement trois mois : https://bit.ly/2RUpbTQ")
       user.message = 1
       user.save
+      sleep(6)
     end
   end
   
@@ -44,3 +45,6 @@ class TwitbotService
   end
 end
 
+TwitbotService.new.gather
+sleep(30)
+TwitbotService.new.tweet
