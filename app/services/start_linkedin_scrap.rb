@@ -1,5 +1,6 @@
 require 'dotenv'
 require 'watir'
+require 'headless'
 Dotenv.load
 class StartLinkedinScrap
   
@@ -9,7 +10,7 @@ class StartLinkedinScrap
   end
 
   def browser
-    @browser ||= Watir::Browser.new(:firefox)
+    @browser ||= Watir::Browser.new :firefox, headless: true
   end
   
   def login
@@ -35,7 +36,7 @@ class StartLinkedinScrap
         @browser.element(:xpath =>"/html/body/div[5]/div[6]/div[3]/div/div[2]/div/div/div[2]/div/div/div/div/ul/li[#{i}]/div/div/div[3]/div/button").click
         @browser.element(:xpath => "/html/body/div[5]/div[7]/div/div[1]/div/section/div/div[2]/button[1]").click
         sleep(2)
-        @browser.textarea(id: 'custom-message').set("Bonjour #{name.text.split(" ")[0]} je suis un charmant petit robot codé par un élève de THP. C'est une super formation qui t'apprends à développer une appli Rails en seulement 2 mois. Incroyable non ? Ils proposent aussi des formations continues pour les entreprises alors  viens faire un tour sur https://www.google.com pour nous dire bonjour !" )
+        @browser.textarea(id: 'custom-message').set("Bonjour #{name.text.split(" ")[0]} je suis un charmant petit robot codé par un élève de THP. C'est une super formation qui t'apprends à développer une appli Rails en seulement 2 mois. Incroyable non ? Ils proposent aussi des formations continues pour les entreprises alors  viens faire un tour sur http://thpalpha-advanced-landing.herokuapp.com/compagny pour nous dire bonjour !" )
         sleep(2)
         @browser.element(:xpath =>"/html/body/div[5]/div[7]/div/div[1]/div/section/div/div[2]/button[2]").click
         sleep(2)
