@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
-    TwitbotService.new.gather
-    TwitbotService.new.tweet
+    #TwitbotService.new.gather
+    #TwitbotService.new.tweet
   end
 end
 
