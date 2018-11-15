@@ -10,7 +10,7 @@ class StartLinkedinScrap
   end
 
   def browser
-    @browser ||= Watir::Browser.new :firefox, headless: true
+    @browser ||= Watir::Browser.new :chrome, headless: true
   end
   
   def login

@@ -27,6 +27,7 @@ class TwitbotService
     handles.take(10).each do |user|
       @client.update("@#{user.nickname} Hey! Toi aussi viens apprendre à coder et à développer des sites web en seulement trois mois : https://bit.ly/2RUpbTQ")
       user.message = 1
+      user.save
     end
   end
   

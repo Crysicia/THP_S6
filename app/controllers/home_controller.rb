@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    TwitbotService.new.gather("Apprendre code")
+    TwitbotService.new.gather
+    TwitbotService.new.tweet
   end
 end
 
