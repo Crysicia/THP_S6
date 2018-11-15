@@ -1,24 +1,38 @@
-Lien du site en ligne : https://thpalpha-advanced-landing.herokuapp.com/
+# TheLandingProject !
 
-Lien du template n°2 https://thpalpha-advanced-landing.herokuapp.com/cible
+## :wrench: Guide d'installation
+Pour installer et tester notre super projet :
 
-Lien du template n°3 https://thpalpha-advanced-landing.herokuapp.com/compagny
+    $ git clone https://github.com/Crysicia/THP-Bootstrap-Day32
+    $ cd THP-Bootstrap-Day32
+    $ bundle install
+    $ rails db:create db:migrate
+Lancez le serveur :
 
-Projet réalisé par Marie élodie Royer, Lucien Passera, Simon le Pavec et Louis Martin du Nord.
+    $ rails s
+Puis allez sur : 
 
-#🔧 Installation guide
-First clone this repository :
-
-  $ git clone https://github.com/Crysicia/THP-Bootstrap-Day32
+    $ localhost:3000
+Et lancez les tests :
   
-Then navigate to the cloned repository and install the dependencies :
-cd THP-Bootstrap-Day32
-$ bundle install
+    $ rails test:system
+    
 
-#📻 What does it do ?
+# 📻 Késkéça fait  ?
 
-1.Notre site fait tourner un boot Linkedin qui fait une recherche d'utilisateurs travaillant dans l'univers du digital, leur fait une demande d'ajout et leurs envoie un message personnalisé avec un lien vers leurs page dédié.
+1. Notre site fait tourner un bot Linkedin qui fait une recherche d'utilisateurs travaillant dans l'univers du digital et envoie une demande d'ajout avec un message personnalisé contenant un lien vers une page dédié.
 
-2.Il fait également tourné un boot Twitter qui récupere des tweet contenant certain mots-clés comme "apprendre le code" et leur envoie un tweet avec le lien d'une de notre page dédiée.
+2. Il fait également tourner un bot Twitter qui récupère des tweets contenant certain mots-clés comme "apprendre le code" et leur envoie un tweet avec le lien d'une de notre page dédiée.
 
-3. Une fois l'utilisateur connecté sur notre page il peut rentrer son adresse email sur mailchimp via un formulaire, ce qui nous permet de lui envoyer des emails personnalisés.
+3. Une fois l'utilisateur connecté sur notre page il peut rentrer son adresse email dans un formulaire, ce qui va l'enregistrer dans notre mailing-list Mailchimp et qui nous permet de lui envoyer des emails personnalisés.
+
+# ⚡️Ouskilé le projet ?
+
+Le site en production : https://thpalpha-advanced-landing.herokuapp.com/
+
+La LP "Jeunes" :  https://thpalpha-advanced-landing.herokuapp.com/cible
+
+La LP "Entreprise" : https://thpalpha-advanced-landing.herokuapp.com/compagny (As-tu vu la typo ? AS-TU VU ?)
+
+## :octopus: Kicékila fait ?
+Marie élodie Royer, Lucien Passera, Simon le Pavec et Louis Martin du Nord.
