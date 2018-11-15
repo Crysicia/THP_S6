@@ -5,9 +5,16 @@ task :start_linkedin_scrap => :environment do
   puts "done."
 end
 
-desc "This task is called by the Heroku scheduler add-on to send twitts about THP"
+desc "This task is called by the Heroku scheduler add-on to gather tweets about coding"
 task :twitbot_service => :environment do
   puts "Sending twitts about THP..."
-  TwitbotService.new.perform
+  TwitbotService.new.gather
+  puts "done."
+end
+
+desc "This task is called by the Heroku scheduler add-on to send tweets about THP"
+task :twitbot_service => :environment do
+  puts "Sending tweets about THP..."
+  TwitbotService.new.tweet
   puts "done."
 end
