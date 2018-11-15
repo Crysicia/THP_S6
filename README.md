@@ -20,11 +20,21 @@ Et lancez les tests :
 
 ## 📻 Késkéça fait  ?
 
-1. Notre site fait tourner un bot Linkedin qui fait une recherche d'utilisateurs travaillant dans l'univers du digital et envoie une demande d'ajout avec un message personnalisé contenant un lien vers une page dédié.
+### :fishing_pole_and_fish: - Acquisition
+Notre serveur fait tourner 2 bots (LinkedIn et Twitter) ciblant plusieurs profils:
+- Les jeunes en recherche de formation
+- Les entreprises du digital cherchant à former leurs employés
+- Les particuliers en reconversion professionnelle
 
-2. Il fait également tourner un bot Twitter qui récupère des tweets contenant certain mots-clés comme "apprendre le code" et leur envoie un tweet avec le lien d'une de notre page dédiée.
+Le bot Twitter va rechercher des tweets par mot-clés (Par exemple: "Apprendre le code") et envoyer un tweet à l'auteur de ce dernier, le renvoyant vers une de nos landing page.
 
-3. Une fois l'utilisateur connecté sur notre page il peut rentrer son adresse email dans un formulaire, ce qui va l'enregistrer dans notre mailing-list Mailchimp et qui nous permet de lui envoyer des emails personnalisés.
+Le bot LinkedIn va repérer des profils d'acteurs du digital et leur envoyer une invitation à se connecter accompagné d'un message contenant le lien d'une autre de nos landing pages.
+
+### :money_with_wings: - Conversion
+Une fois sur une de nos landing pages, le visiteur a la possibilité de voir quels sont les points que la formation peux lui apporter et est invité à s'inscrire à la newsletter de TheHackingProject.
+
+### :bar_chart: - Analytics
+Nous avons branché Google Analytics sur nos 3 landing pages afin de pouvoir tracker au mieux les failles de nos landing pages et les taux de conversions des différentes pages.
 
 ## ⚡️Ouskilé le projet ?
 
