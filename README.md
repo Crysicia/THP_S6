@@ -1,24 +1,8 @@
-# README
+Lien du site en ligne : https://thpalpha-advanced-landing.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1.Notre site fait tourner un boot Linkedin qui ajoute des utilisateurs travaillant dans l'univers du digital et leurs envoie un message personnalisé avec un lien vers leurs page dédié.
 
-Things you may want to cover:
+2.Il fait également tourné un boot Twitter qui récupere des tweet contenant certain mots-clés comme "apprendre le code" et leur envoie un tweet avec le lien d'une de notre page dédiée.
 
-* Ruby version
+3. Une fois l'utilisateur connecté sur notre page il peut rentrer son adresse email sur mailchimp via un formulaire, ceux qui nous permet de lui envoyer des emails personnalisés.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
