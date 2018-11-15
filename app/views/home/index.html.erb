@@ -1,2 +1,54 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<body>
+
+<div class="jumbotron">
+    <h1 class="display-4">Apprenez à développer une application web en 3 mois. </h1>
+    <p class="lead">Grâce à une communauté d'apprenant motivés.</p>
+     <a class="btn btn-primary btn-lg" href="#" role="button">Rejoignez la communauté</a>
+</div>
+
+<h2>Pourquoi rejoindre the Hacking project ?</h2>
+<div class="card-group">
+  <div class="card">
+    <%= image_tag("friendship.jpg",:height => "250px", :alt => "Card image cap", :class =>"card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title">Une communauté soudée</h5>
+      <p class="card-text">Apprendre le code seul dans sa chambre, c'est finit, Chez the Hacking Project, vous travailler en groupe afin de partager les meilleurs pratiques</p>
+    </div>
+  </div>
+  <div class="card">
+    <%= image_tag("complet.jpg", :height => "250px", :alt => "Card image cap", :class =>"card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title">Un programme complet </h5>
+      <p class="card-text">Chez Thp vous apprenez toutes les compétences nécessaires à la création d'une application web. de L'intégration de page Html/Css à la conception de programmes complexes en Ruby et Javascript</p>
+    </div>
+  </div>
+  <div class="card">
+     <%= image_tag("time.jpg", :height => "250px", :alt => "Card image cap", :class =>"card-img-top") %>
+    <div class="card-body">
+    <div class="card-body">
+      <h5 class="card-title">Un programme à temps complet</h5>
+      <p class="card-text">Thp c'est 5 jours par semaines pendant 8 à 10 heures par jours ce qui vous forcera à vous les sortir du cul et c'est pas tant pis</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> 
+    <div id="mc_embed_signup">
+    <form action="https://thehackingproject.us19.list-manage.com/subscribe/post?u=0ed1235f1d09adb49d0b8a175&amp;id=a77f5c63a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Inscrit toi à la newsletter</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0ed1235f1d09adb49d0b8a175_a77f5c63a8" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        </div>
+    </form>
+
+  </div>
+</div>
+
+
+</body>
