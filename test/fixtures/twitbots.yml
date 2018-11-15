@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  handle: MyString
-  send: 1
-
-two:
-  handle: MyString
-  send: 1

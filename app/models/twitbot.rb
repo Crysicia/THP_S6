@@ -1,2 +1,0 @@
-class Twitbot < ApplicationRecord
-end
