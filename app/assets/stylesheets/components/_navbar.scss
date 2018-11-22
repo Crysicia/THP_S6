@@ -1,0 +1,30 @@
+#dropdown {
+  position: relative;
+  width: 100px;
+  min-height: 50px;
+}
+
+#dropdown img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#dropdown-content {
+  display: none;
+  margin-top: 50px;
+}
+
+#dropdown-content li {
+  display: block;
+  margin-left: -25px;
+}
+
+#dropdown-content li a {
+  color: blue;
+  text-decoration: underline;
+}
+
+#dropdown-content li a:hover {
+  color: violet;
+}
