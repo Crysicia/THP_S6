@@ -1,10 +1,10 @@
-# THP-Todo !
+# THP-AJAX !
 
 ## :wrench: Installation guide
 To install and test our awesome project :
 
-    $ git clone https://github.com/Crysicia/todolist-app.git
-    $ cd todolist-app
+    $ git clone https://github.com/Crysicia/THP-Ajax-Day38.git
+    $ cd THP-Ajax-Day38
     $ bundle install
     $ rails db:create db:migrate db:seed
   Run it like this :
@@ -16,10 +16,10 @@ To install and test our awesome project :
     $ localhost:3000
     
 ## :radio: What does it do ?
-Simple todo app with über-qualitative carousel and tabs.
+Simple mailer with über-gud AJAX in it
 ## :clapper: But, what about the live website ?
 
-He's here : [Click me :star2:](https://thpalpha-todo.herokuapp.com/)
+He's here : [Click me :star2:](https://thpalpha-ajax.herokuapp.com/)
 
 ## :octopus: Who made this ?
-@ssimonlp the pitch boy and @Crysicia the hidden guy !
+@Crysicia the working guy and @ssimonlp, @mathieumllt and @louismn the beer drinking boys.
