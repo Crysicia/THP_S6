@@ -1,0 +1,49 @@
+<!-- ##### Single Product Details Area Start ##### -->
+    <section class="single_product_details_area d-flex align-items-center">
+
+        <!-- Single Product Thumb -->
+        <div class="single_product_thumb clearfix mt-3 mb-3">
+            <div class="product-img">
+               
+               <% unless @item.image.attachment.nil? %>
+               <%= image_tag @item.image %>
+               <% else %>
+               <img src="<%= @item.image_url %>" alt="img shop" class="ml-4">
+               <% end %>
+            </div>
+        </div>
+
+        <!-- Single Product Description -->
+        <div class="single_product_desc clearfix">
+            
+            <a href="#">
+                <h2><%= @item.title %></h2>
+            </a>
+            <p class="product-price"><%= number_to_currency( @item.price, :unit=>'€') %></p>
+            <p class="product-desc"><%= @item.description %></p>
+
+            <!-- Form -->
+            <form class="cart-form clearfix" method="post">
+                <!-- Select Box -->
+                <div class="select-box d-flex mt-50 mb-30">
+                    <select name="select" id="productSize" class="mr-5">
+                        <option value="value">JPG</option>
+                        <option value="value">TIFF</option>
+                        <option value="value">PNG</option>
+                    </select>
+                   
+                </div>
+                <!-- Cart & Favourite Box -->
+                <div class="cart-fav-box d-flex align-items-center">
+                    <!-- Cart -->
+                    <% if user_signed_in? %>
+                    <%= link_to "Add to cart", cart_item_path(item_id: @item), method: :post, class: "btn essence-btn" %>
+                    <% end %>
+                    <!-- Favourite -->
+                    <div class="product-favourite ml-4">
+                        <a href="#" class="favme fa fa-heart"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
