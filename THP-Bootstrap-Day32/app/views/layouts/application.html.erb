@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap</title>
+  <meta name="google-site-verification" content="T7t5f-C4CDRkdk72ObeT46iBfz_55BUrJFnJSjmkees" />
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129289917-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129289917-1');
+</script>
+
+</head>
+
+<body>
+	<%= render "shared/header" %>
+  <%= yield %>
+<%= render "shared/footer" %>
+
+
+
+</body>
+
+</html>
