@@ -1,0 +1,58 @@
+<div class="container">
+  <h2>First form</h2>
+  <form action="create" method="POST">
+    <div class="form-row">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <div class="form-group col-md-6">
+        <label for="inputUsername">Username</label>
+        <input type="text" class="form-control" id="inputUsernam" placeholder="Username" name="username">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputBio">Biography</label>
+      <textarea class="form-control" id="inputBio" placeholder="My life, is potatoes..." name="bio"></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit">
+  </form>
+
+  <hr>
+  <h2>Second form</h2>
+  <%= form_tag url_for(action: 'create'), method: "post" do %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <%= label_tag 'Username' %>
+      <%= text_field_tag 'username', @user.username, class: "form-control" %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= label_tag 'Email' %>
+      <%= email_field_tag 'email', @user.email, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= label_tag 'Biography' %>
+    <%= text_area_tag 'bio', @user.bio, class: "form-control" %>
+  </div>
+  <%= submit_tag "Create user", class: "btn btn-primary" %>
+
+  <% end %>
+  <hr>
+  <h2>Third form</h2>
+  <%= form_for @user, url: {action: "create"} do |f| %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <%= f.text_field :username, class: "form-control" %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.email_field :email, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.text_area :bio, size: "60x12", class: "form-control" %>
+  </div>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+  <% end %>
+</div>
