@@ -1,0 +1,7 @@
+<% @emails.each do |email| %>
+<% if email.read %>
+<%= link_to email.object, email_path(email), remote: true, class: "btn btn-outline-primary", style: 'background-color: gold;' %>
+<% else %>
+<%= link_to email.object, email_path(email), remote: true, class: "btn" %>
+<% end %>
+<% end %>
