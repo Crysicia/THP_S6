@@ -1,0 +1,51 @@
+
+
+    <!-- Header -->
+    
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+        <a class="navbar-brand js-scroll-trigger" href="/">Home</a>
+          <h1 class="mx-auto my-0 text-uppercase">CRYPTOS</h1> 
+<form class="form-inline d-flex">
+              <%= form_tag(search_path method: :get) do %>
+             
+              <%= text_field_tag :name, params[:name], class: "form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0",placeholder: 'Search for currencies...' %>
+              <%= submit_tag 'Search', :class =>"btn btn-primary mx-auto", name: nil %>
+             
+              <%end%>
+            </form>
+         
+          <div style="overflow-x:auto;">
+            <table>
+
+              <tr>
+                <th>Logo</th>
+                <th>Name</th>
+                <th>Value</th>
+              </tr>
+ <%@crypto.each do |x| %>
+              <tr>
+                <td><img src="https://s2.coinmarketcap.com/static/img/coins/32x32/<%=x.id%>.png"></td>
+                <td> <%=x.name %></td>
+                <td><%= x.value %>$</td>
+              </tr>
+ <%end%>
+            </table>
+          </div>
+         
+
+    </header>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+
+
